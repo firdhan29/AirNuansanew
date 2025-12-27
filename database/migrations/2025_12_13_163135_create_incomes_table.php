@@ -1,0 +1,27 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    public function up()
+{
+    Schema::create('incomes', function (Blueprint $table) {
+        $table->id();
+        $table->string('description'); // Keterangan (Misal: Kas Awal, Donasi)
+        $table->bigInteger('amount');  // Jumlah Uang
+        $table->date('date');          // Tanggal
+        $table->timestamps();
+    });
+}
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('incomes');
+    }
+};
