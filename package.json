@@ -21,7 +21,10 @@
         "vue": "^3.4.0"
     },
     "dependencies": {
+        "exceljs": "^4.4.0",
+        "file-saver": "^2.0.5",
         "lucide-vue-next": "^0.556.0",
+        "vue3-marquee": "^4.2.2",
         "ziggy-js": "^2.6.0"
     }
 }
